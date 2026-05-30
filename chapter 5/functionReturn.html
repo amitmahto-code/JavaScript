@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Function Return</title>
+</head>
+<body>
+  <script>
+    function checkingDrivingAge(){
+      let age;
+      if (age === undefined){
+        return 'Aap Avtar Ho';
+      }
+      if (age >=18){
+        return 'You can drive'; 
+      }else{
+        return 'Use a bicycle';
+      }
+    }
+    let result = checkingDrivingAge();
+    console.log(result);
+
+    // perameter vs argument
+    function age(a,b){ // here age(a,b) is perameter 
+      let sum = a+b
+      return sum;
+    }
+    let total = sum(4,6);// here sum(4,6) is agrument
+    console.log(total);
+
+  </script>
+</body>
+</html>
