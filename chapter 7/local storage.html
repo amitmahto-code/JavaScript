@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Local stroage</title>
+</head>
+<body>
+    <button></button>
+    <script>
+        let product = {
+            company : 'Jodan',
+            price : 456,
+            size : 'M',
+            rating : {
+                star : 4.5,
+                noOfreview : 56,
+            },
+        };
+        localStorage.setItem('price',345);
+        console.log(product);
+        localStorage.setItem('product',JSON.stringify( product));
+        let product2 = JSON.parse( localStorage.getItem(product));
+        console.log(product2);
+        localStorage.removeItem('price');
+        //if you want to clear all local storage use this method
+        // localStorage.clear();
+        button.classlist 
+    </script>
+</body>
+</html>
