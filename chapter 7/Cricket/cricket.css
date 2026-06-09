@@ -1,5 +1,6 @@
 body{
       text-align: center ;
+      background-color: navajowhite;
     }
 .choice-button{
     height: 100px;
@@ -12,4 +13,12 @@ body{
 }
 .Choice-img{
     height: 75px;
+}
+
+#Reset{
+    height: 40px;
+    width: 80px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    cursor: pointer;
 }
