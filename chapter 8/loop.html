@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loop</title>
+</head>
+<body>
+    <script>
+        //while loop
+       let num = 1; //Initialization
+       while (num <= 10 ) {  //condition
+        console.log(num);
+        num++; // counter
+       }
+       console.log('Final value ' + num);
+
+       //do while loop
+
+       let dowhileloop = 1;
+       do{
+        console.log(dowhileloop);
+        dowhileloop++;
+       }
+       while(dowhileloop == 0);
+
+       //For loop
+
+       for( let i = 1; i<=10; i++){
+        console.log(i);
+       }
+
+       //example of array accessing wih useing for loop
+       let nums = [1,2,3,5,6];
+       for(let i = 0; i < nums.length ; i++){
+        console.log(nums[i]);
+       }
+
+       // Accumulator pattern
+
+       let arrays = [1,2,3,4,5,6,7];
+       let sum = 0;
+       for( let i = 0 ; i < arrays.length; i++){
+        sum+=arrays[i];
+       }
+       console.log('sum of the arrays '+sum);
+
+       //example
+       let newArray = [];
+       for (let i=0; i < arrays.length; i++){
+        newArray.push( arrays[i] * arrays[i]);
+        // newArray[i] = arrays[i] * arrays[i]; 
+       }
+       console.log(`New array ${newArray}`);
+
+       // break
+       let x = [1,2,3,4,5,6,7,8,9];
+       for(let i = 0 ; i < x.length; i++){
+        if(x[i]===8){
+            console.log(`Number found at index ${i}`);
+            break;
+        }
+        console.log('Still looking');
+       }
+
+       // continue
+       for(let i = 0 ; i < 50 ; i++){
+        if(i % 2 === 0){
+            continue; 
+        }
+        console.log(i);
+    }
+    </script>
+</body>
+</html>
