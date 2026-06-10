@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance JavaScript</title>
+</head>
+<body>
+    <script>
+        let sum = function(num1,num2){
+            return num1+num2;
+        }
+        let sumOfThreeNumber = function(num1,num2,num3,sumOfTwonumber){
+            let sum1=sumOfTwonumber(num1,num2);
+            return sumOfTwonumber(sum1,num3);
+        }
+        console.log(sumOfThreeNumber(4,6,6,sum));
+        //here sum variable call with reference name sumoftwonumber in  sumofthreenumber
+        
+        //Arrow function
+        //you see the different between code line 8 
+        let sum1 = (num1,num2) => {
+            return num1 + num2;
+        }
+        let sum2 = (num1,num2) => num1 + num2;
+        let square = num => num * num;
+
+        let alram = () => console.log('Getup');
+        setTimeout(alram,2000);
+        console.log('Alarm set');
+        
+
+    </script>
+</body>
+</html>
