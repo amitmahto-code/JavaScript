@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array properties and method</title>
+</head>
+<body>
+    <script>
+        let number = [1,2,3,4,4,56];
+        let number1 = [1,'amit',null,true];
+        let obj = { name : "amit",};
+
+        // method to check is Array or not 
+        console.log(Array.isArray(number));   
+        console.log(Array.isArray(obj));
+        
+        // check the length of array
+        console.log(number.length); 
+
+        // push is used to add element at the end of array
+        number.push(4);
+        console.log(number);
+        //pop is used to remove element at end of array 
+        number.pop();
+        console.log(number);
+        
+        //shift add the element at start of array
+        let arr = [1,2,3,4]
+        arr.unshift(5);
+        console.log('shift  ' + arr);
+        
+        //unshift remove the element at start of array 
+        arr.shift();
+        console.log('unshift' + arr);
+
+        // splice remove element start to end index number
+        arr.splice(1,2);
+        console.log(arr);
+
+        // conver into string 
+        console.log(arr.toString())
+
+        // sort element of array in assecending order 
+        let ass = [3,6,4,8];
+        ass.sort();
+        console.log(ass);
+
+        // array de-structuring 
+        let [a,b,c,d] = ass;
+        console.log(a + " "  +  b + ' ' +  c  + ' ' + d + ' ');
+    </script>
+</body>
+</html>
