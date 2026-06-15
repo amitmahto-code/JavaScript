@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Set 4</title>
+</head>
+<body>
+  <script>
+    console.log('Check number is odd or even');
+    let number = 3;
+    oddeven(number);
+    function oddeven(number){
+    if ((number % 2)===0){
+      console.log('even');
+    }else{
+      console.log('odd');
+    }
+  }
+    console.log('retrun the largest number');
+    let fistNumber = 5;
+    let secNumber = 6;
+    let lager = largestNumber(fistNumber,secNumber);
+    console.log(lager);
+    function largestNumber(a,b){
+      if (a>b){
+        return a;
+      }else if( b>a){
+        return b
+      }else{
+        return 'Both are equal';
+      }
+    }
+    console.log('convert celsiusvalue to Farenhenit')
+    function toFahrenheit(celsiusValue){
+      return 9/5*celsiusValue+32;
+    }
+    console.log(toFahrenheit(38));
+  </script>
+</body>
+</html>
