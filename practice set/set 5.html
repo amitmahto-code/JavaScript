@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Set 5</title>
+</head>
+<body>
+  <script>
+    //create object ot represent a product from myntra
+    let product = {
+      item : 't-shirt',
+      price : 500,
+      Brand:'Puma',
+      size: 38,
+      'delivery-time':'same day delivery',
+    };
+    //create an object with two references and log changes to one object bu changing the other one
+    let company = product
+    console.log(product);
+    company.price = 500;
+    product.brand = 'Puma';
+    console.log(company);
+    console.log(product);
+    console.log(company['delivery-time']);
+    let time = 'delivery-time';
+    console.log(product[time]);
+
+    //Given an object {message:'good job',status:'complete'}
+    let display = {
+      message:'good job',
+      status: 'complete',
+    }
+    let {message} = display;
+    let displayStatus = display.status;
+    console.log(message);
+    console.log(displayStatus);
+    
+    //add function iIidenticalProduct
+     let product1 = {
+      item : 't-shirt',
+      price : 500,
+      Brand:'Puma',
+      size: 38,
+      'delivery-time':'same day delivery',
+    };
+    function isIdentcalProduct(product, product1){
+      if (typeof product !== 'object' && typeof product1 !== 'object')
+      console.warn('Parmeter passed was not an object');
+      return false;
+      
+      if (product == product1)
+      return true;
+
+      if ( product.item === product1.item &&  product.price === product1.price && product.Brand === product1.Brand && product.size === product1.size )
+      return true;
+      else{
+        return false;
+      }
+    }
+    console.log(isIdentcalProduct(product,product1));
+    </script>
+</body>
+</html>
