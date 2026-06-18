@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color:hotpink;
+}
+#welcome{
+  margin-top: 20px;
+}
+#h1{
+  text-transform: capitalize;
+  text-align: center;
+  
+}
+#formate{
+  height: 350px;
+  width: 200px;
+  background-color: #ffff;
+  border: 10px solid lightgreen;
+  border-radius: 5px;
+  position: relative;
+  top: 50px;
+  left: 41%;
+}
+#display{
+  height: 30px;
+  margin:5px 15px ;
+  background-color: aliceblue;
+
+}
+.button-container{
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffff;
+  
+}
+.button{
+  height: 40px;
+  width: 45px;
+  margin: 3px;
+  border: 2px solid rgb(149, 143, 143);
+  border-radius: 10px;
+  background-color: thistle;
+
+}
