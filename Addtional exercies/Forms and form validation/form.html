@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+    <style>
+        #hidden{
+            display: none;
+        }
+        small{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Name" id="naam"><br>
+        <div id="hidden">
+            <small>your name should be greater than 2 Character</small>
+            <br><br>
+        </div>
+        <input type="email" placeholder="email" ><br>
+        <input type="password" placeholder="password"><br>
+        <select>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+
+        </select><br>
+        <textarea placeholder="Tell us about yoy..."></textarea><br>
+        <input type="submit" >
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
